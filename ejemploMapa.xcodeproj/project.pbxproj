@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82BC2AD51CD6FB350016ED9A /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82BC2AD41CD6FB350016ED9A /* fondo.jpg */; };
+		82BC2AD91CD6FEFB0016ED9A /* mapPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 82BC2AD81CD6FEFB0016ED9A /* mapPin.png */; };
 		82EE32211CD1318700F9365E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE32201CD1318700F9365E /* AppDelegate.swift */; };
 		82EE32231CD1318700F9365E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EE32221CD1318700F9365E /* ViewController.swift */; };
 		82EE32261CD1318700F9365E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EE32241CD1318700F9365E /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82BC2AD41CD6FB350016ED9A /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpg; sourceTree = "<group>"; };
+		82BC2AD81CD6FEFB0016ED9A /* mapPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapPin.png; sourceTree = "<group>"; };
 		82EE321D1CD1318700F9365E /* ejemploMapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ejemploMapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EE32201CD1318700F9365E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82EE32221CD1318700F9365E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		82EE321F1CD1318700F9365E /* ejemploMapa */ = {
 			isa = PBXGroup;
 			children = (
+				82BC2AD41CD6FB350016ED9A /* fondo.jpg */,
+				82BC2AD81CD6FEFB0016ED9A /* mapPin.png */,
 				82EE32201CD1318700F9365E /* AppDelegate.swift */,
 				82EE32221CD1318700F9365E /* ViewController.swift */,
 				82EE32241CD1318700F9365E /* Main.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					82EE321C1CD1318700F9365E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ED39YX7KL8;
 					};
 				};
 			};
@@ -123,7 +130,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82EE322B1CD1318800F9365E /* LaunchScreen.storyboard in Resources */,
+				82BC2AD91CD6FEFB0016ED9A /* mapPin.png in Resources */,
 				82EE32281CD1318800F9365E /* Assets.xcassets in Resources */,
+				82BC2AD51CD6FB350016ED9A /* fondo.jpg in Resources */,
 				82EE32261CD1318700F9365E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ejemploMapa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.com.morasoft.ejemploMapa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ejemploMapa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mx.com.morasoft.ejemploMapa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +303,7 @@
 				82EE32311CD1318800F9365E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
